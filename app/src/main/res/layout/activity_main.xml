@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tic Tac Toe"
+        android:textColor="#DC0707"
+        android:textSize="45dp"
+        android:layout_margin="13dp"
+        />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:columnCount="3"
+        android:rowCount="3">
+
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="4dp"
+            android:onClick="check"
+            />
+        <Button
+            android:id="@+id/btn2"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="4dp"
+            android:onClick="check"/>
+        <Button
+            android:id="@+id/btn3"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="4dp"
+            android:onClick="check"/>
+        <Button
+            android:id="@+id/btn4"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="4dp"
+            android:onClick="check"
+            />
+        <Button
+            android:id="@+id/btn5"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="4dp"
+            android:onClick="check"
+
+            />
+        <Button
+            android:id="@+id/btn6"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="4dp"
+            android:onClick="check"/>
+        <Button
+            android:id="@+id/btn7"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="4dp"
+            android:onClick="check"/>
+        <Button
+            android:id="@+id/btn8"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="4dp"
+            android:onClick="check"/>
+        <Button
+            android:id="@+id/btn9"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="4dp"
+            android:onClick="check"/>
+
+
+    </GridLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/newGame"
+        android:layout_marginTop="120dp"
+        android:text="@string/new_Game"
+        android:textColor="@color/black"
+        android:onClick="newGame"
+        android:backgroundTint="#FF5722"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="13dp"
+        android:gravity="end"
+        android:text="@string/author"
+        android:textColor="#8A6E6E"
+        android:textSize="15dp" />
+
+
+</LinearLayout>
